@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="images">
+            <img src="images/img 1.jpg" >
+            <img src="images/img 2.jpg" >
+            <img src="images/img 3.jpg" >
+            <img src="images/img 4.jpg" >
+            <img src="images/img 5.jpg" >
+        </div>
+        <div onclick="side_slide(-1)" class="slide left">
+            <i class='bx bx-chevron-left'></i>
+        </div>
+        <div onclick="side_slide(1)" class="slide right">
+            <i class='bx bx-chevron-right'></i>
+        </div>
+
+        <div class="dot-sliders">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

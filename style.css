@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    height: 700px;
+    width: 750px;
+    overflow: hidden;
+    
+}
+
+.container .images {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.images img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.dot-sliders {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.dot-sliders span {
+    height:15px ;
+    width: 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 0 3px;
+    
+}
+
+.dot-sliders span:hover {
+    transform: scale(1.5);
+}
+
+.container .slide{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.container .slide:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.slide i{
+    font-size: 35px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.container .right {
+    right: 0;
+}
+
+/* .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dot:hover {
+    transform: scale(1.5);
+    
+}
+
+.dot:not(:hover) {
+    transform: scale(0.75);
+} */
